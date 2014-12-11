@@ -1,11 +1,13 @@
 Python Script之指定github Commit日期
 ===
 
-### 规定
+### 前期准备
 
 使用平台: Linux
 
-准备条件: 将你的Linux root用户公钥传到github Setting
+1.将你的Linux root用户公钥传到github Setting
+
+2.创建一个名为Test的空仓库
 
 ### 如何使用？
 

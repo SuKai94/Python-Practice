@@ -9,15 +9,15 @@ Python Script之指定github Commit日期
 
 ### 如何使用？
 
-1. 修改config.py里相应的值：
+1.修改config.py里相应的值：
 
 - `dest_date`: 你想指定的git commit日期，格式为"2014/12/12"
 - `github_name`: 你的github名
 - `github_email`: 你的github邮箱
 
-2. `sudo python bootStrap.py`
+2.`sudo python bootStrap.py`
 
-3. 然后你会发现你github用户首页相应日期的灰色格子变成绿色，完成了那天的commit
+3.然后你会发现你github用户首页相应日期的灰色格子变成绿色，完成了那天的commit
 
 ### 备注
 

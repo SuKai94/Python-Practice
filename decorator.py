@@ -1,7 +1,10 @@
-#coding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 '''
-Decorator in Python
-URL:
+decorator in Python
+
+Links:
 1)http://coolshell.cn/articles/11265.html
 2)http://www.cnblogs.com/rhcad/archive/2011/12/21/2295507.html
 '''

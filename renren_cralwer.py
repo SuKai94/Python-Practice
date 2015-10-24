@@ -1,5 +1,10 @@
-#!usr/bin/env/python
-#coding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''
+模拟登录人人网
+抓取主页访问者，以及最近过生日的好友
+'''
 import urllib
 import urllib2
 import cookielib
@@ -69,7 +74,6 @@ def main():
 	print '\n今天过生日的有：'
 	for birth in birthdays:
 		print birth 
-
 	sk_renren.close()
 
 

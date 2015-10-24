@@ -1,4 +1,7 @@
-#coding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 '''
 函数式编程
 URL:http://coolshell.cn/articles/10822.html
@@ -10,7 +13,7 @@ URL:http://coolshell.cn/articles/10822.html
 4）代码变成了在描述你要干什么，而不是怎么去干
 '''
 
-'''N1'''
+'''eg.1'''
 login = 0
 
 def is_login(f):
@@ -61,5 +64,3 @@ num = [2, -5, 9, 7, -2, 5, 3, 1, 0, -3, 8]
 positive_num = filter(lambda x:x>0, num)
 average = reduce(lambda x,y:x+y, positive_num) / len(positive_num)
 print average
-
-

@@ -1,5 +1,8 @@
-import re
-'''正则表达式'''
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+'''Python中的正则表达式'''
 
 '''
 元字符表
@@ -83,10 +86,3 @@ m = r.search(s)
 m.group('Area')#'010'
 m.group('No')#'87654321'
 m.groupdict()#{'Area':010','No':87654321'}
-
-
-
-
-
-
-

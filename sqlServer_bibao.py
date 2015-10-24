@@ -1,12 +1,17 @@
-#coding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 '''
-s_bibao函数功能：求属性集的闭包。
-函数参数为：所有输入的函数依赖列表f，属性集s。
-函数返回值：s+
+SqlServer中的闭包求解算法
 '''
+
 def s_bibao(f, s):
 	while True:
+		'''
+		s_bibao函数功能：求属性集的闭包。
+		函数参数为：所有输入的函数依赖列表f，属性集s。
+		函数返回值：s+
+		'''
 		'''azjb函数功能：判断字符串a是不是字符串b的子集'''
 		azjb = lambda a,b:True if len(filter(lambda x:x in list(b), list(a)))==len(a) else False
 		a = filter(lambda x:azjb(x.split('->')[0], s) and not azjb(x.split('->')[1], s), f)
@@ -14,15 +19,17 @@ def s_bibao(f, s):
 			return s
 		s = s + ''.join(map(lambda x:x.split('->')[1], a))
 
+
 '''
 sub函数：求集合father的所有子集
 '''
 sub = lambda father: reduce(lambda x,y:[z.union([y]) for z in x] + x, father, [set()])
 
-'''
-函数功能：求所有的函数依赖关系F+
-'''
+
 def all_bibao(attribute, f):
+	'''
+	函数功能：求所有的函数依赖关系F+
+	'''
 	'''attr_son为attribute集合的所有子集列表'''
 	attr_son = sub(attribute)
 	res = []
@@ -39,10 +46,11 @@ def all_bibao(attribute, f):
 				res.append('%s->%s' % (t_s, 'NULL'))
 	return res
 
-'''
-all_attribute函数：求得所有出现的属性
-'''
+
 def all_attribute(attribute, all_t):
+	'''
+	all_attribute函数：求得所有出现的属性
+	'''
 	for t in all_t:
 		if t not in attribute:
 			attribute.append(t)
@@ -117,5 +125,3 @@ if __name__ == '__main__':
 	print '你输入的函数依赖的闭包F+是：'
 	for t in res:
 		print t
-
-

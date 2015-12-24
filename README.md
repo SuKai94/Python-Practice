@@ -1,4 +1,4 @@
 Python-Practice
 ===
 
-学些python过程中的一些小程序
+学习python过程中的一些小程序

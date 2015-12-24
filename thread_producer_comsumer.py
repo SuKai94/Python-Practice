@@ -21,7 +21,7 @@ Condition的acquire()和release()内部调用了lock的acquire()和release()
 
 
 class ProducerThread(Thread):
-     def run(self):
+    def run(self):
         nums = range(5)
         global queue
         while True:
